@@ -1,0 +1,17 @@
+def bin_search(A, k):
+    first = 0
+    last = len(A) -1
+    found = False
+    while not found and first <= last:
+        mid_value = (first + last)//2
+        if A[mid_value] == k:
+            found = True
+        else:
+            if A[mid_value] < k:
+                first = mid_value+1
+            else:
+                last = mid_value-1
+    if found:
+        return found, mid_value
+    else:
+        return found, None
