@@ -1,0 +1,11 @@
+def sub_list(lst, mask):
+    mask = mask.zfill(len(lst))
+    return map(lambda x: x[0], filter(lambda x: x[1] != "0", zip(lst, mask)))
+def subset_sum(lst, value):
+    ret =[]
+    for i in range(1, 2**len(lst)):
+        pick = list(sub_list(lst, bin(i)[2:]))
+        if sum(pick) == value:
+            ret.append(pick)
+    
+    return ret
