@@ -1,0 +1,11 @@
+def daff(max_num):      
+    ret = []
+    for i in range(100, max_num+1):
+        si = str(i)
+        value = 0
+        for index in range(0, len(si)):
+            value += int(si[index]) ** 3
+        if value == i:
+            ret.append(i)
+
+    return ret
