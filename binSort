@@ -1,0 +1,33 @@
+def bin_sort(lst):
+    binsize = 6
+    min1, max1 = 0, 0
+    for i in range(len(lst)):
+        if lst[i] < min1: min1 = lst[i]
+        elif lst[i] > max1: max1 = lst[i]
+
+    bincount = int((max1-min1)/6) + 1
+    bin1 = []
+    for i in range(bincount):
+        bin1.append([])
+
+    for i in range(len(lst)):
+        bin1[int((lst[i]-min1)/binsize)].append(lst[i])
+    ret = []
+    print(bin1)
+    for i in range(bincount):
+        j = bubble_sort(bin1[i])
+        for item in j:
+            ret.append(item)
+    return ret
+
+def bubble_sort(lst):
+    for i in range(len(lst) - 1):
+        swap = False
+        for j in range(len(lst) - 1 - i):
+            if lst[j] > lst[j + 1]:
+                lst[j], lst[j + 1] = lst[j + 1], lst[j]
+                swap = True
+        if not swap:
+            break
+
+    return lst
