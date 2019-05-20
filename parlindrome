@@ -1,0 +1,2 @@
+def parlindrome(string):
+	return True if len(string) <= 1 else all((string[1] == string[-1], parlindrome(string[1:-1])))
