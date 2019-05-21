@@ -1,0 +1,12 @@
+def permutaion(string):
+        if len(string) < 2:
+                return string
+        else:
+                ret = []
+                for i in range(len(string)):
+                        pick = string[i]
+                        rest = string[0:i] + string[i+1::]
+                        for item in permutaion(rest):
+                                ret.append(pick + item)
+
+        return ret
