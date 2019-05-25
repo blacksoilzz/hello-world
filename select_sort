@@ -1,0 +1,8 @@
+def selectsort(lst):
+    for i in range(len(lst) - 1, 1, -1):
+        max_index = i
+        for j in range(i):
+            if lst[j] > lst[max_index]:
+                max_index = j
+        lst[i], lst[max_index] = lst[max_index], lst[i]
+    return lst
