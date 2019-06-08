@@ -1,0 +1,56 @@
+class Graph:
+    def __init__(self):
+        self.adj = {}
+
+    def add_edge(self, u, v):
+        if not self.adj[u]:
+            self.adj[u] = v
+        self.adj[u].append(v)
+
+
+class DFSResult:
+    def __init__(self):
+        self.parent = {}
+        self.visited = []
+
+
+def dfs_visit_r(g, v, results, parent=None):
+    results.parent = parent
+    for u in g.adj[v]:
+        if u not in results.parent:
+            dfs_visit_r(g, u, results, v)
+
+
+def dfs(g):
+    results = DFSResult()
+    for v in g.adj.keys():
+        if v not in results.parent:
+            results.parent[v] = None
+            if v not in results.visited:
+                stack = [v]
+                while stack:
+                    u = stack.pop()
+                    if u not in results.visited:
+                        results.visited.append(u)
+                    for n in g.adj[u]:
+                        if n not in results.visited:
+                            results.parent[n] = results.visited[-1]
+                            stack.extend(n)
+    return results
+
+
+g = Graph()
+g.adj = {
+    's': ['a', 'x'],
+    'a': ['z', 's'],
+    'd': ['f', 'c', 'x'],
+    'c': ['x', 'd', 'f', 'v'],
+    'v': ['f', 'c'],
+    'f': ['c', 'd', 'v'],
+    'x': ['s', 'd', 'c'],
+    'z': []
+}
+
+dfs_result = dfs(g)
+print(dfs_result.visited)
+print(dfs_result.parent)
