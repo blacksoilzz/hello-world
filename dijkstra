@@ -1,0 +1,19 @@
+import heapq
+
+
+def dijkstra(graph, source):
+    priority_queue = []
+    heapq.heappush(priority_queue, (0, source))
+    visited = {}
+    while priority_queue:
+        current_distance, current = heapq.heappop(priority_queue)
+        if current not in visited:
+            visited[current] = current_distance
+        if current not in graph:
+            continue
+        for neighbor, distance in graph[current].items():
+            if neighbor in visited:
+                continue
+            new_distance = current_distance + distance
+            heapq.heappush(priority_queue, (new_distance, neighbor))
+    return visited
