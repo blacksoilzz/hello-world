@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-11T14:44:28.992Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36" etag="-L7ukFlL2uLAfsFaEshw" version="12.6.7" type="github">
+<mxfile host="www.draw.io" modified="2020-02-11T14:52:27.032Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36" etag="aKB4FpRrlG_fLgKQxECa" version="12.6.7" type="github">
   <diagram name="Page-1" id="822b0af5-4adb-64df-f703-e8dfc1f81529">
     <mxGraphModel dx="1422" dy="762" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -64,7 +64,7 @@
         <mxCell id="vFcQCkQcMgolOcBUj4Wx-18" value="" style="shape=flexArrow;endArrow=classic;html=1;dashed=1;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="430" y="590" as="sourcePoint"/>
-            <mxPoint x="450" y="530" as="targetPoint"/>
+            <mxPoint x="480" y="522" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
         <mxCell id="vFcQCkQcMgolOcBUj4Wx-19" value="&lt;span lang=&quot;EN-US&quot; style=&quot;white-space: normal ; font-size: 10.5pt ; font-family: , sans-serif&quot;&gt;HTTPAccess_Limit_WEB&lt;/span&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontStyle=1" parent="1" vertex="1">
@@ -107,16 +107,22 @@
           <mxGeometry x="235" y="416" width="65" height="18" as="geometry"/>
         </mxCell>
         <mxCell id="okbzQBwIPwilKlg-W5tC-4" value="①" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=17;" vertex="1" parent="1">
-          <mxGeometry x="210" y="412" width="27" height="24" as="geometry"/>
+          <mxGeometry x="205" y="412" width="27" height="24" as="geometry"/>
         </mxCell>
         <mxCell id="okbzQBwIPwilKlg-W5tC-5" value="②" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=17;" vertex="1" parent="1">
           <mxGeometry x="395" y="296" width="27" height="24" as="geometry"/>
         </mxCell>
         <mxCell id="okbzQBwIPwilKlg-W5tC-6" value="③" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=17;" vertex="1" parent="1">
-          <mxGeometry x="266" y="507" width="27" height="24" as="geometry"/>
+          <mxGeometry x="205" y="523" width="27" height="24" as="geometry"/>
         </mxCell>
         <mxCell id="okbzQBwIPwilKlg-W5tC-7" value="防火墙" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontStyle=1;fontSize=26;" vertex="1" parent="1">
           <mxGeometry x="419" y="450" width="88" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="okbzQBwIPwilKlg-W5tC-8" value="交互信息" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="367.75" y="331" width="58" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="okbzQBwIPwilKlg-W5tC-9" value="认证通过，匹配安全策略访问访问网络" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="232" y="529" width="214" height="18" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
